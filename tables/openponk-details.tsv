@@ -1,0 +1,17 @@
+1	OPSpecEditableDropListMorphTest	1	32	3	33.33	2	33.33	0.00	0	0.00	0	0:00:29
+2	OPFuelSerializerTest	3	8	2	50.00	1	100.00	50.00	1	1.00	1	0:00:09
+3	OPStonSerializerTest	3	6	2	50.00	1	100.00	50.00	1	1.00	1	0:00:09
+4	OPNullSerializerTest	3	8	2	50.00	1	50.00	0.00	0	0.00	0	0:00:03
+5	OPNavigatorAdaptersTest	3	51	25	32.00	17	36.00	4.00	0	0.12	1	0:00:55
+6	OPDynamicFormMagritteVisitorTest	1	57	20	0.00	20	10.00	10.00	2	-	2	0:00:11
+7	OPRTElementsConstraintTest	2	62	2	50.00	1	100.00	50.00	1	1.00	1	0:01:53
+8	OPRTViewHighlighterTest	4	21	10	70.00	3	70.00	0.00	0	0.00	0	0:00:09
+9	OPProjectTest	2	111	25	28.00	18	64.00	36.00	5	1.29	9	0:15:23
+10	OPRTEdgeHighlighterTest	4	31	17	58.82	7	58.82	0.00	0	0.00	0	0:00:15
+11	OPElementLayoutTest	5	97	32	50.00	16	65.62	15.62	2	0.31	5	0:00:41
+12	OPProjectControllerTest	4	168	53	18.87	43	18.87	0.00	1	0.00	0	9:16:12
+13	OPRTStyledConnectionTest	4	152	31	61.29	12	64.52	3.23	1	0.05	1	0:14:10
+14	OPProjectDirectoryMaterializerTest	10	60	46	67.39	15	73.91	6.52	2	0.10	3	0:05:57
+15	OPRTAnchorConstraintTest	2	366	52	9.62	47	28.85	19.23	2	2.00	10	0:08:10
+16	OPProjectDirectorySerializerTest	6	59	17	82.35	3	82.35	0.00	0	0.00	0	0:00:16
+17	OPDiagramTest	9	195	27	62.96	10	88.89	25.93	1	0.41	7	0:02:35

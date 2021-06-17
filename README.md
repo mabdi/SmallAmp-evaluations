@@ -47,4 +47,10 @@ python3 runner.py -r longtable -d ../../pharo-projects-files/Bloc -p Bloc # Deta
 python3 runner.py -r sumtable -d ../../pharo-projects-files/Bloc -p Bloc   # Summary reporting (tex format)
 python3 runner.py -r ampslog -d ../../pharo-projects-files/Bloc -p Bloc  # Input amplifiers, number of transformations
 ```
+
+tsv format:
+```
+python3 runner.py -r longtable -d ../../pharo-projects-files/Bloc -p Bloc | tail -n +4 | sed -e 's/ & /\t/g' -e 's/\\\\$//g'
+```
+
  

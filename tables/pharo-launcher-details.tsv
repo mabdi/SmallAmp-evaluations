@@ -1,3 +1,4 @@
+id	test class	otm	tloc	tmut	oms	oam	ams	imp	atm	inck	akm	time
 1	PhLFileBrowserTest	1	32	24	0.00	24	20.83	20.83	2	-	5	0:00:45
 2	PhLRemoteTemplateTest	8	51	30	3.33	29	16.67	13.33	4	4.00	4	0:01:25
 3	PhLOpenSettingsCommandTest	1	11	2	50.00	1	50.00	0.00	0	0.00	0	0:13:19

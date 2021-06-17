@@ -1,3 +1,4 @@
+id	test class	otm	tloc	tmut	oms	oam	ams	imp	atm	inck	akm	time
 1	GQLAbstractGrammarTest	15	157	99	74.75	25	89.90	15.15	28	0.20	15	1:09:09
 2	GQLSingleAnonimousQueryGrammarTest	22	44	14	85.71	2	100.00	14.29	1	0.17	2	3:33:35
 3	GQLRequestGrammarTest	29	199	58	96.55	2	96.55	0.00	0	0.00	0	0:12:17

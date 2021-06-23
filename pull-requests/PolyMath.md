@@ -16,3 +16,4 @@ Note that the comment text (line 75) is added manually to increase the readabili
 The original test method included two assertions to confirm the type of the returned value of the method (`self assert: w class equals: Array`).
 The developers asked us to omit these assertion statements, because it was exposing an implementation detail.
 We changed the pull request accordingly and it was merged immediately.
+

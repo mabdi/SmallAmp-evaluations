@@ -4,8 +4,10 @@
 -   [GraphQL](#graphql)
 -   [MaterialDesignLite](#materialdesignlite)
 -   [OpenPonk](#openponk)
+-   [PetitParser2](#petitparser2)
 -   [Pharo-Launcher](#pharo-launcher)
 -   [PolyMath](#polymath)
+-   [Roassal3](#roassal3)
 -   [Seaside](#seaside)
 -   [Telescope](#telescope)
 -   [Zinc](#zinc)
@@ -15,15 +17,17 @@
 We sent a [pull-request](https://github.com/feenkcom/Bloc/pull/7) to
 this project containing the suggestion for adding a new assertion in an
 existing test method in the test class `BlKeyboardProcessorTest`. The
-suggested test method is shown in figure below. By calling the state
-revealer method `#keystrokesAllowed`, this assertion verifies the
-correctness of the object state after an `#processKeyDown:` event.
-
-The pull-request was also merged after a few weeks with a positive
-comment.
+suggested test method is shown in figure below.
 
 ![A new assertion in test method suggestion sent in a pull-request to
 the project Bloc](figures/pr-bloc.png)
+
+By calling the state revealer method `#keystrokesAllowed`, this
+assertion verifies the correctness of the object state after an
+`#processKeyDown:` event.
+
+The pull-request was also merged after a few weeks with a positive
+comment.
 
 ## DataFrame
 
@@ -32,6 +36,9 @@ We sent a
 this project containing the suggestion for adding a new test method in
 the test class `DataFrameTest`. The suggested test method is shown in
 the figure below.
+
+![A new test method suggestion sent in a pull-request to the project
+DataFrame](figures/pr-dataframe.png)
 
 The variable `df` is an instance variable that has been initialized in
 the `#setUp` method. It includes a tabular data mixed from numbers and
@@ -45,9 +52,6 @@ DataFrame.
 The pull-request was merged after a few weeks. A developer of the
 project commented: *Small-amp seems to be a very valuable tool!*
 
-![A new test method suggestion sent in a pull-request to the project
-DataFrame](figures/pr-dataframe.png)
-
 ## DiscordSt
 
 We sent a
@@ -56,11 +60,11 @@ this project containing the suggestion for adding a new test method in
 the test class `DSEmbedImageTest`. The suggested test method is shown in
 figure below.
 
-The method covers the method `#extent` which was not covered in the test
-class before. The pull-request was merged after a few days.
-
 ![A new assertion in test method suggestion sent in a pull-request to
 the project DiscordSt](figures/pr-discordst.png)
+
+The method covers the method `#extent` which was not covered in the test
+class before. The pull-request was merged after a few days.
 
 ## GraphQL
 
@@ -70,6 +74,9 @@ this project containing the suggestion for adding a new test method in
 the test class `GQLSSchemaNodeTest`. The suggested test method is shown
 in the figure below.
 
+![A new test method suggestion sent in a pull-request to the project
+GraphQL](figures/pr-graphql.png)
+
 This test method verifies the return value of `directives` in a `schema`
 object. The returned value is generated in the method
 `GQLSSchemaNode $>$$>$ initializeDefaultDirectives` and contains
@@ -77,9 +84,6 @@ technical debt. This test method guards against future evolutions which
 may break assumptions made by clients.
 
 The pull-request was merged after a few days.
-
-![A new test method suggestion sent in a pull-request to the project
-GraphQL](figures/pr-graphql.png)
 
 ## MaterialDesignLite
 
@@ -89,18 +93,18 @@ this project containing the suggestion for adding two new test methods
 in the test class `MDLCalendarTest`. The suggested test methods are
 shown in figures below.
 
+![A new assertion in test method suggestion sent in a pull-request to
+the project MaterialDesignLite](figures/pr-materialdesignlite1.png)
+
+![A new assertion in test method suggestion sent in a pull-request to
+the project MaterialDesignLite](figures/pr-materialdesignlite2.png)
+
 Both of test methods are similar and are created by adding a new method
 call to the test input. The tests are created for the `Calendar` widget
 and verify correctness of `#selectPreviousYears` and `#selectNextYears`
 methods.
 
 The pull-request was merged the day after.
-
-![A new assertion in test method suggestion sent in a pull-request to
-the project MaterialDesignLite](figures/pr-materialdesignlite1.png)
-
-![A new assertion in test method suggestion sent in a pull-request to
-the project MaterialDesignLite](figures/pr-materialdesignlite2.png)
 
 ## OpenPonk
 
@@ -109,6 +113,9 @@ project containing the suggestion for adding a set of new lines in an
 existing test method in the test class `OPDiagramTest`. The suggested
 test method is shown in the figure below.
 
+![Changes on an existing test method sent in a pull-request to the
+project OpenPonk](figures/pr-openponk.png)
+
 The assertions in lines 104 to 107 verify the state of a freshly
 initialized `OPDiagram` object (where model is `nil`). Then the model
 has been set to an appropriate value. The assertions in lines 109 to 112
@@ -116,19 +123,18 @@ verify the public API through the accessor methods.
 
 The pull-request is not merged up to the date of writing this paper.
 
-![Changes on an existing test method sent in a pull-request to the
-project OpenPonk](figures/pr-openponk.png) \#\# PetitParser2
+## PetitParser2
 
 We sent a [pull-request](https://github.com/kursjan/petitparser2) to
 this project containing the suggestion for adding a new test method in
 the test class `PP2NoopVisitorTest`. The suggested test method is shown
 in the figure below.
 
-The test method tests the value of `currentContext` in `result` object.
-The pull-request is not merged up to the date of writing this paper.
-
 ![A new assertion in test method suggestion sent in a pull-request to
 the project PetitParser2](figures/pr-petitparser2.png)
+
+The test method tests the value of `currentContext` in `result` object.
+The pull-request is not merged up to the date of writing this paper.
 
 ## Pharo-Launcher
 
@@ -137,6 +143,9 @@ We sent a
 to this project containing the suggestion for adding a new test method
 in the test class `PhLImportImageCommandTest`. The suggested test method
 is shown in the figure below.
+
+![A new test method suggestion sent in a pull-request to the project
+Pharo-Launcher](figures/pr-pharolauncher.png)
 
 This test is produced from the original test method of
 `testCanImportAnImage` which verifies an image can be imported using a
@@ -148,9 +157,6 @@ the test method and the file.
 
 The pull-request was merged in the same day with this comment: *Indeed,
 the test you are adding has a value. Good job SmallAmp*.
-
-![A new test method suggestion sent in a pull-request to the project
-Pharo-Launcher](figures/pr-pharolauncher.png)
 
 ## PolyMath
 
@@ -180,6 +186,24 @@ the returned value of the method (`self assert: w class equals: Array`).
 The developers asked us to omit these assertion statements, because it
 was exposing an implementation detail. We changed the pull request
 accordingly and it was merged immediately.
+
+## Roassal3
+
+We sent a
+[pull-request](https://github.com/ObjectProfile/Roassal3/pull/340) to
+this project containing the suggestion for adding a new test method in
+the test class `RSCameraTest` called `#testZoomToFit`. The suggested
+test method is shown in the figure below.
+
+![Suggested test method in the project
+Roassal3](figures/pr-roassal3.png)
+
+This test method is derived from an original test called
+`#testPosition`, and covers the method `RSCamera>> #zoomToFit`, which
+was not covered by `RSCameraTest`.
+
+The pull-request merged with the comment: *Thanks! Your test makes
+sense*.
 
 ## Seaside
 

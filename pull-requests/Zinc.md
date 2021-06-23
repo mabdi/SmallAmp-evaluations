@@ -15,3 +15,4 @@ Then *assertion amplification* inserts a set of new assertions after the added m
 And finally, after the main amplification loop is finished, the *assertion reducer* rejects all superfluous assertion statements.
 
 The pull-request was merged in the same day.
+

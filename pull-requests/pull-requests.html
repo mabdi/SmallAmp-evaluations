@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Bloc</title>
+  <title>Pull Requests</title>
   <style>
     html {
       line-height: 1.5;
@@ -149,6 +149,9 @@
   <![endif]-->
 </head>
 <body>
+<header id="title-block-header">
+<h1 class="title">Pull Requests</h1>
+</header>
 <nav id="TOC" role="doc-toc">
 <ul>
 <li><a href="#bloc">Bloc</a></li>
@@ -157,67 +160,73 @@
 <li><a href="#graphql">GraphQL</a></li>
 <li><a href="#materialdesignlite">MaterialDesignLite</a></li>
 <li><a href="#openponk">OpenPonk</a></li>
+<li><a href="#petitparser2">PetitParser2</a></li>
 <li><a href="#pharo-launcher">Pharo-Launcher</a></li>
 <li><a href="#polymath">PolyMath</a></li>
+<li><a href="#roassal3">Roassal3</a></li>
 <li><a href="#seaside">Seaside</a></li>
 <li><a href="#telescope">Telescope</a></li>
 <li><a href="#zinc">Zinc</a></li>
 </ul>
 </nav>
 <h2 id="bloc">Bloc</h2>
-<p>We sent a <a href="https://github.com/feenkcom/Bloc/pull/7">pull-request</a> to this project containing the suggestion for adding a new assertion in an existing test method in the test class <code>BlKeyboardProcessorTest</code>. The suggested test method is shown in figure below. By calling the state revealer method <code>#keystrokesAllowed</code>, this assertion verifies the correctness of the object state after an <code>#processKeyDown:</code> event.</p>
-<p>The pull-request was also merged after a few weeks with a positive comment.</p>
+<p>We sent a <a href="https://github.com/feenkcom/Bloc/pull/7">pull-request</a> to this project containing the suggestion for adding a new assertion in an existing test method in the test class <code>BlKeyboardProcessorTest</code>. The suggested test method is shown in figure below.</p>
 <figure>
 <img src="figures/pr-bloc.png" alt="A new assertion in test method suggestion sent in a pull-request to the project Bloc" /><figcaption aria-hidden="true">A new assertion in test method suggestion sent in a pull-request to the project Bloc</figcaption>
 </figure>
+<p>By calling the state revealer method <code>#keystrokesAllowed</code>, this assertion verifies the correctness of the object state after an <code>#processKeyDown:</code> event.</p>
+<p>The pull-request was also merged after a few weeks with a positive comment.</p>
 <h2 id="dataframe">DataFrame</h2>
 <p>We sent a <a href="https://github.com/PolyMathOrg/DataFrame/pull/132">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>DataFrameTest</code>. The suggested test method is shown in the figure below.</p>
-<p>The variable <code>df</code> is an instance variable that has been initialized in the <code>#setUp</code> method. It includes a tabular data mixed from numbers and texts.</p>
-<p>This test method makes it explicit that calling the method <code>#range</code> on a DataFrame object containing non-numerical columns throws an exception. With this new test it becomes an explicit part of the contract for DataFrame.</p>
-<p>The pull-request was merged after a few weeks. A developer of the project commented: <em>Small-amp seems to be a very valuable tool!</em></p>
 <figure>
 <img src="figures/pr-dataframe.png" alt="A new test method suggestion sent in a pull-request to the project DataFrame" /><figcaption aria-hidden="true">A new test method suggestion sent in a pull-request to the project DataFrame</figcaption>
 </figure>
+<p>The variable <code>df</code> is an instance variable that has been initialized in the <code>#setUp</code> method. It includes a tabular data mixed from numbers and texts.</p>
+<p>This test method makes it explicit that calling the method <code>#range</code> on a DataFrame object containing non-numerical columns throws an exception. With this new test it becomes an explicit part of the contract for DataFrame.</p>
+<p>The pull-request was merged after a few weeks. A developer of the project commented: <em>Small-amp seems to be a very valuable tool!</em></p>
 <h2 id="discordst">DiscordSt</h2>
 <p>We sent a <a href="https://github.com/JurajKubelka/DiscordSt/pull/75">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>DSEmbedImageTest</code>. The suggested test method is shown in figure below.</p>
-<p>The method covers the method <code>#extent</code> which was not covered in the test class before. The pull-request was merged after a few days.</p>
 <figure>
 <img src="figures/pr-discordst.png" alt="A new assertion in test method suggestion sent in a pull-request to the project DiscordSt" /><figcaption aria-hidden="true">A new assertion in test method suggestion sent in a pull-request to the project DiscordSt</figcaption>
 </figure>
+<p>The method covers the method <code>#extent</code> which was not covered in the test class before. The pull-request was merged after a few days.</p>
 <h2 id="graphql">GraphQL</h2>
 <p>We sent a <a href="https://github.com/OBJECTSEMANTICS/GraphQL/pull/12">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>GQLSSchemaNodeTest</code>. The suggested test method is shown in the figure below.</p>
-<p>This test method verifies the return value of <code>directives</code> in a <code>schema</code> object. The returned value is generated in the method <code>GQLSSchemaNode $&gt;$$&gt;$ initializeDefaultDirectives</code> and contains technical debt. This test method guards against future evolutions which may break assumptions made by clients.</p>
-<p>The pull-request was merged after a few days.</p>
 <figure>
 <img src="figures/pr-graphql.png" alt="A new test method suggestion sent in a pull-request to the project GraphQL" /><figcaption aria-hidden="true">A new test method suggestion sent in a pull-request to the project GraphQL</figcaption>
 </figure>
+<p>This test method verifies the return value of <code>directives</code> in a <code>schema</code> object. The returned value is generated in the method <code>GQLSSchemaNode $&gt;$$&gt;$ initializeDefaultDirectives</code> and contains technical debt. This test method guards against future evolutions which may break assumptions made by clients.</p>
+<p>The pull-request was merged after a few days.</p>
 <h2 id="materialdesignlite">MaterialDesignLite</h2>
 <p>We sent a <a href="https://github.com/DuneSt/MaterialDesignLite/pull/308">pull-request</a> to this project containing the suggestion for adding two new test methods in the test class <code>MDLCalendarTest</code>. The suggested test methods are shown in figures below.</p>
-<p>Both of test methods are similar and are created by adding a new method call to the test input. The tests are created for the <code>Calendar</code> widget and verify correctness of <code>#selectPreviousYears</code> and <code>#selectNextYears</code> methods.</p>
-<p>The pull-request was merged the day after.</p>
 <figure>
 <img src="figures/pr-materialdesignlite1.png" alt="A new assertion in test method suggestion sent in a pull-request to the project MaterialDesignLite" /><figcaption aria-hidden="true">A new assertion in test method suggestion sent in a pull-request to the project MaterialDesignLite</figcaption>
 </figure>
 <figure>
 <img src="figures/pr-materialdesignlite2.png" alt="A new assertion in test method suggestion sent in a pull-request to the project MaterialDesignLite" /><figcaption aria-hidden="true">A new assertion in test method suggestion sent in a pull-request to the project MaterialDesignLite</figcaption>
 </figure>
+<p>Both of test methods are similar and are created by adding a new method call to the test input. The tests are created for the <code>Calendar</code> widget and verify correctness of <code>#selectPreviousYears</code> and <code>#selectNextYears</code> methods.</p>
+<p>The pull-request was merged the day after.</p>
 <h2 id="openponk">OpenPonk</h2>
 <p>We sent a <a href="https://github.com/OpenPonk/openponk">pull-request</a> to this project containing the suggestion for adding a set of new lines in an existing test method in the test class <code>OPDiagramTest</code>. The suggested test method is shown in the figure below.</p>
+<figure>
+<img src="figures/pr-openponk.png" alt="Changes on an existing test method sent in a pull-request to the project OpenPonk" /><figcaption aria-hidden="true">Changes on an existing test method sent in a pull-request to the project OpenPonk</figcaption>
+</figure>
 <p>The assertions in lines 104 to 107 verify the state of a freshly initialized <code>OPDiagram</code> object (where model is <code>nil</code>). Then the model has been set to an appropriate value. The assertions in lines 109 to 112 verify the public API through the accessor methods.</p>
 <p>The pull-request is not merged up to the date of writing this paper.</p>
-<p><img src="figures/pr-openponk.png" alt="Changes on an existing test method sent in a pull-request to the project OpenPonk" /> ## PetitParser2</p>
+<h2 id="petitparser2">PetitParser2</h2>
 <p>We sent a <a href="https://github.com/kursjan/petitparser2">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>PP2NoopVisitorTest</code>. The suggested test method is shown in the figure below.</p>
-<p>The test method tests the value of <code>currentContext</code> in <code>result</code> object. The pull-request is not merged up to the date of writing this paper.</p>
 <figure>
 <img src="figures/pr-petitparser2.png" alt="A new assertion in test method suggestion sent in a pull-request to the project PetitParser2" /><figcaption aria-hidden="true">A new assertion in test method suggestion sent in a pull-request to the project PetitParser2</figcaption>
 </figure>
+<p>The test method tests the value of <code>currentContext</code> in <code>result</code> object. The pull-request is not merged up to the date of writing this paper.</p>
 <h2 id="pharo-launcher">Pharo-Launcher</h2>
 <p>We sent a <a href="https://github.com/pharo-project/pharo-launcher/pull/500">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>PhLImportImageCommandTest</code>. The suggested test method is shown in the figure below.</p>
-<p>This test is produced from the original test method of <code>testCanImportAnImage</code> which verifies an image can be imported using a valid filename. SmallAmp applies a literal mutation on the file name (<code>'foo.image'</code> changed to <code>'fo.image'</code>) that results an invalid filename and consequently raising a <code>FileDoesNotExistException</code> error. Before sending the pull-request, we selected meaningful names for the name of the test method and the file.</p>
-<p>The pull-request was merged in the same day with this comment: <em>Indeed, the test you are adding has a value. Good job SmallAmp</em>.</p>
 <figure>
 <img src="figures/pr-pharolauncher.png" alt="A new test method suggestion sent in a pull-request to the project Pharo-Launcher" /><figcaption aria-hidden="true">A new test method suggestion sent in a pull-request to the project Pharo-Launcher</figcaption>
 </figure>
+<p>This test is produced from the original test method of <code>testCanImportAnImage</code> which verifies an image can be imported using a valid filename. SmallAmp applies a literal mutation on the file name (<code>'foo.image'</code> changed to <code>'fo.image'</code>) that results an invalid filename and consequently raising a <code>FileDoesNotExistException</code> error. Before sending the pull-request, we selected meaningful names for the name of the test method and the file.</p>
+<p>The pull-request was merged in the same day with this comment: <em>Indeed, the test you are adding has a value. Good job SmallAmp</em>.</p>
 <h2 id="polymath">PolyMath</h2>
 <p>We sent a <a href="https://github.com/PolyMathOrg/PolyMath/pull/178">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>PMVectorTest</code>. The suggested test method is shown in the figure below.</p>
 <figure>
@@ -226,6 +235,13 @@
 <p>This test method is testing the call of the method <code>#householder</code> on two different vectors. Before this test, the method <code>#householder</code> was not covered in this test class.</p>
 <p>The <em>method-call-adder</em> input amplifier adds calling to this method in different test methods. We included two of them in a new test method that execute two different branches in the test method (based on the condition <code>x &lt;= 0</code>). The former vector (line 75 in the figure) forces the <code>ifTrue</code> branch and the latter vector (line 80 in the figure) forces <code>ifFalse</code> branch. Note that the comment text (line 75) is added manually to increase the readability of the test.</p>
 <p>The original test method included two assertions to confirm the type of the returned value of the method (<code>self assert: w class equals: Array</code>). The developers asked us to omit these assertion statements, because it was exposing an implementation detail. We changed the pull request accordingly and it was merged immediately.</p>
+<h2 id="roassal3">Roassal3</h2>
+<p>We sent a <a href="https://github.com/ObjectProfile/Roassal3/pull/340">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>RSCameraTest</code> called <code>#testZoomToFit</code>. The suggested test method is shown in the figure below.</p>
+<figure>
+<img src="figures/pr-roassal3.png" alt="Suggested test method in the project Roassal3" /><figcaption aria-hidden="true">Suggested test method in the project Roassal3</figcaption>
+</figure>
+<p>This test method is derived from an original test called <code>#testPosition</code>, and covers the method <code>RSCamera&gt;&gt; #zoomToFit</code>, which was not covered by <code>RSCameraTest</code>.</p>
+<p>The pull-request merged with the comment: <em>Thanks! Your test makes sense</em>.</p>
 <h2 id="seaside">Seaside</h2>
 <p>We sent a <a href="https://github.com/SeasideSt/Seaside/pull/1215">pull-request</a> to this project containing the suggestion for adding a set of new lines into an existing test method in the test class <code>WARequestTest</code>. The test method and suggestions are shown in the fegure below.</p>
 <figure>

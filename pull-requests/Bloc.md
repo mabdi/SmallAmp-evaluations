@@ -1,4 +1,4 @@
-# Bloc
+## Bloc
 
 We sent a [pull-request](https://github.com/feenkcom/Bloc/pull/7) to this project containing the suggestion  for adding a new assertion in an existing test method  in the test class `BlKeyboardProcessorTest`.
 The suggested test method is shown in figure below. 

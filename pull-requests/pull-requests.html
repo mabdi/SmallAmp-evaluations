@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Bloc</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#bloc">Bloc</a></li>
+<li><a href="#dataframe">DataFrame</a></li>
+<li><a href="#discordst">DiscordSt</a></li>
+<li><a href="#graphql">GraphQL</a></li>
+<li><a href="#materialdesignlite">MaterialDesignLite</a></li>
+<li><a href="#openponk">OpenPonk</a></li>
+<li><a href="#pharo-launcher">Pharo-Launcher</a></li>
+<li><a href="#polymath">PolyMath</a></li>
+<li><a href="#seaside">Seaside</a></li>
+<li><a href="#telescope">Telescope</a></li>
+<li><a href="#zinc">Zinc</a></li>
+</ul>
+</nav>
+<h2 id="bloc">Bloc</h2>
+<p>We sent a <a href="https://github.com/feenkcom/Bloc/pull/7">pull-request</a> to this project containing the suggestion for adding a new assertion in an existing test method in the test class <code>BlKeyboardProcessorTest</code>. The suggested test method is shown in figure below. By calling the state revealer method <code>#keystrokesAllowed</code>, this assertion verifies the correctness of the object state after an <code>#processKeyDown:</code> event.</p>
+<p>The pull-request was also merged after a few weeks with a positive comment.</p>
+<figure>
+<img src="figures/pr-bloc.png" alt="A new assertion in test method suggestion sent in a pull-request to the project Bloc" /><figcaption aria-hidden="true">A new assertion in test method suggestion sent in a pull-request to the project Bloc</figcaption>
+</figure>
+<h2 id="dataframe">DataFrame</h2>
+<p>We sent a <a href="https://github.com/PolyMathOrg/DataFrame/pull/132">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>DataFrameTest</code>. The suggested test method is shown in the figure below.</p>
+<p>The variable <code>df</code> is an instance variable that has been initialized in the <code>#setUp</code> method. It includes a tabular data mixed from numbers and texts.</p>
+<p>This test method makes it explicit that calling the method <code>#range</code> on a DataFrame object containing non-numerical columns throws an exception. With this new test it becomes an explicit part of the contract for DataFrame.</p>
+<p>The pull-request was merged after a few weeks. A developer of the project commented: <em>Small-amp seems to be a very valuable tool!</em></p>
+<figure>
+<img src="figures/pr-dataframe.png" alt="A new test method suggestion sent in a pull-request to the project DataFrame" /><figcaption aria-hidden="true">A new test method suggestion sent in a pull-request to the project DataFrame</figcaption>
+</figure>
+<h2 id="discordst">DiscordSt</h2>
+<p>We sent a <a href="https://github.com/JurajKubelka/DiscordSt/pull/75">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>DSEmbedImageTest</code>. The suggested test method is shown in figure below.</p>
+<p>The method covers the method <code>#extent</code> which was not covered in the test class before. The pull-request was merged after a few days.</p>
+<figure>
+<img src="figures/pr-discordst.png" alt="A new assertion in test method suggestion sent in a pull-request to the project DiscordSt" /><figcaption aria-hidden="true">A new assertion in test method suggestion sent in a pull-request to the project DiscordSt</figcaption>
+</figure>
+<h2 id="graphql">GraphQL</h2>
+<p>We sent a <a href="https://github.com/OBJECTSEMANTICS/GraphQL/pull/12">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>GQLSSchemaNodeTest</code>. The suggested test method is shown in the figure below.</p>
+<p>This test method verifies the return value of <code>directives</code> in a <code>schema</code> object. The returned value is generated in the method <code>GQLSSchemaNode $&gt;$$&gt;$ initializeDefaultDirectives</code> and contains technical debt. This test method guards against future evolutions which may break assumptions made by clients.</p>
+<p>The pull-request was merged after a few days.</p>
+<figure>
+<img src="figures/pr-graphql.png" alt="A new test method suggestion sent in a pull-request to the project GraphQL" /><figcaption aria-hidden="true">A new test method suggestion sent in a pull-request to the project GraphQL</figcaption>
+</figure>
+<h2 id="materialdesignlite">MaterialDesignLite</h2>
+<p>We sent a <a href="https://github.com/DuneSt/MaterialDesignLite/pull/308">pull-request</a> to this project containing the suggestion for adding two new test methods in the test class <code>MDLCalendarTest</code>. The suggested test methods are shown in figures below.</p>
+<p>Both of test methods are similar and are created by adding a new method call to the test input. The tests are created for the <code>Calendar</code> widget and verify correctness of <code>#selectPreviousYears</code> and <code>#selectNextYears</code> methods.</p>
+<p>The pull-request was merged the day after.</p>
+<figure>
+<img src="figures/pr-materialdesignlite1.png" alt="A new assertion in test method suggestion sent in a pull-request to the project MaterialDesignLite" /><figcaption aria-hidden="true">A new assertion in test method suggestion sent in a pull-request to the project MaterialDesignLite</figcaption>
+</figure>
+<figure>
+<img src="figures/pr-materialdesignlite2.png" alt="A new assertion in test method suggestion sent in a pull-request to the project MaterialDesignLite" /><figcaption aria-hidden="true">A new assertion in test method suggestion sent in a pull-request to the project MaterialDesignLite</figcaption>
+</figure>
+<h2 id="openponk">OpenPonk</h2>
+<p>We sent a <a href="https://github.com/OpenPonk/openponk">pull-request</a> to this project containing the suggestion for adding a set of new lines in an existing test method in the test class <code>OPDiagramTest</code>. The suggested test method is shown in the figure below.</p>
+<p>The assertions in lines 104 to 107 verify the state of a freshly initialized <code>OPDiagram</code> object (where model is <code>nil</code>). Then the model has been set to an appropriate value. The assertions in lines 109 to 112 verify the public API through the accessor methods.</p>
+<p>The pull-request is not merged up to the date of writing this paper.</p>
+<p><img src="figures/pr-openponk.png" alt="Changes on an existing test method sent in a pull-request to the project OpenPonk" /> ## PetitParser2</p>
+<p>We sent a <a href="https://github.com/kursjan/petitparser2">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>PP2NoopVisitorTest</code>. The suggested test method is shown in the figure below.</p>
+<p>The test method tests the value of <code>currentContext</code> in <code>result</code> object. The pull-request is not merged up to the date of writing this paper.</p>
+<figure>
+<img src="figures/pr-petitparser2.png" alt="A new assertion in test method suggestion sent in a pull-request to the project PetitParser2" /><figcaption aria-hidden="true">A new assertion in test method suggestion sent in a pull-request to the project PetitParser2</figcaption>
+</figure>
+<h2 id="pharo-launcher">Pharo-Launcher</h2>
+<p>We sent a <a href="https://github.com/pharo-project/pharo-launcher/pull/500">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>PhLImportImageCommandTest</code>. The suggested test method is shown in the figure below.</p>
+<p>This test is produced from the original test method of <code>testCanImportAnImage</code> which verifies an image can be imported using a valid filename. SmallAmp applies a literal mutation on the file name (<code>'foo.image'</code> changed to <code>'fo.image'</code>) that results an invalid filename and consequently raising a <code>FileDoesNotExistException</code> error. Before sending the pull-request, we selected meaningful names for the name of the test method and the file.</p>
+<p>The pull-request was merged in the same day with this comment: <em>Indeed, the test you are adding has a value. Good job SmallAmp</em>.</p>
+<figure>
+<img src="figures/pr-pharolauncher.png" alt="A new test method suggestion sent in a pull-request to the project Pharo-Launcher" /><figcaption aria-hidden="true">A new test method suggestion sent in a pull-request to the project Pharo-Launcher</figcaption>
+</figure>
+<h2 id="polymath">PolyMath</h2>
+<p>We sent a <a href="https://github.com/PolyMathOrg/PolyMath/pull/178">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>PMVectorTest</code>. The suggested test method is shown in the figure below.</p>
+<figure>
+<img src="figures/pr-polymath.png" alt="A new test method suggestion sent in a pull-request to the project PolyMath" /><figcaption aria-hidden="true">A new test method suggestion sent in a pull-request to the project PolyMath</figcaption>
+</figure>
+<p>This test method is testing the call of the method <code>#householder</code> on two different vectors. Before this test, the method <code>#householder</code> was not covered in this test class.</p>
+<p>The <em>method-call-adder</em> input amplifier adds calling to this method in different test methods. We included two of them in a new test method that execute two different branches in the test method (based on the condition <code>x &lt;= 0</code>). The former vector (line 75 in the figure) forces the <code>ifTrue</code> branch and the latter vector (line 80 in the figure) forces <code>ifFalse</code> branch. Note that the comment text (line 75) is added manually to increase the readability of the test.</p>
+<p>The original test method included two assertions to confirm the type of the returned value of the method (<code>self assert: w class equals: Array</code>). The developers asked us to omit these assertion statements, because it was exposing an implementation detail. We changed the pull request accordingly and it was merged immediately.</p>
+<h2 id="seaside">Seaside</h2>
+<p>We sent a <a href="https://github.com/SeasideSt/Seaside/pull/1215">pull-request</a> to this project containing the suggestion for adding a set of new lines into an existing test method in the test class <code>WARequestTest</code>. The test method and suggestions are shown in the fegure below.</p>
+<figure>
+<img src="figures/pr-seaside.png" alt="Changes on an existing test method sent in a pull-request to the project Seaside" /><figcaption aria-hidden="true">Changes on an existing test method sent in a pull-request to the project Seaside</figcaption>
+</figure>
+<p>This new test method kills 6 new mutants. It is the result of a cooperation between <em>assertion amplification</em> and <em>input amplification</em>. Lines 5 to 10 is produced by assertion amplification on the original test method (<code>#testPostFields</code>). Line 15 is added by <em>method-call-adder</em> input-amplifier.</p>
+<p>This test was merged by one of the project’s developers after a few days. Moreover, the developer left a valuable comment containing the following points:</p>
+<ul>
+<li><p><strong>The suggestions do not fit this test method</strong>: The developer said <em>I expected the testPostfields unit test method to focus on testing the postFields</em>. We agree with his/her remark. If the suggested changes do not have a semantic relation to the original test method, it should be moved to another test or a new one. We considered this advice in the next pull-requests.</p></li>
+<li><p><strong>Usefulness of the result to refactoring the tests</strong>: The developer also stated <em>the result of the test amplification makes me evaluate the existing unit tests and refactor them to improve the test coverage and test factorization</em>. This shows that even if the immediate results of test amplification are not tidy enough, they still help refactor existing tests.</p></li>
+</ul>
+<h2 id="telescope">Telescope</h2>
+<p>We sent a <a href="https://github.com/TelescopeSt/Telescope">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>TLNodeCreationStrategyTest</code>. The suggested test method is shown in figure below.</p>
+<figure>
+<img src="figures/pr-telescope.png" alt="A new assertion in test method suggestion sent in a pull-request to the project Telescope" /><figcaption aria-hidden="true">A new assertion in test method suggestion sent in a pull-request to the project Telescope</figcaption>
+</figure>
+<p>The test method verifies the state of the returned object from calling <code>copyAsSimpleStrategy</code>. This method is never covered in the test class. It also contain technical debt.</p>
+<p>The pull-request is not merged up to the date of writing this paper.</p>
+<h2 id="zinc">Zinc</h2>
+<p>We sent a <a href="https://github.com/svenvc/zinc/pull/58">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>ZnRequestTest</code>. The suggested test method is shown in the figure below.</p>
+<figure>
+<img src="figures/pr-zinc.png" alt="A new assertion in test method suggestion sent in a pull-request to the project Zinc" /><figcaption aria-hidden="true">A new assertion in test method suggestion sent in a pull-request to the project Zinc</figcaption>
+</figure>
+<p>This test method calls the method <code>#setAcceptEncodingGzip</code> on an <code>request</code> object. Then calls another method <code>#acceptsEncodingGzip</code> to verify the change. Both of these methods were not covered in this test class before this test method.</p>
+<p>This method is built by cooperating three module of SmallAmp. First, <em>method-call-adder</em> input amplifier adds a new method call. Then <em>assertion amplification</em> inserts a set of new assertions after the added method call. And finally, after the main amplification loop is finished, the <em>assertion reducer</em> rejects all superfluous assertion statements.</p>
+<p>The pull-request was merged in the same day.</p>
+</body>
+</html>

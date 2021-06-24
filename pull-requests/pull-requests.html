@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Pull Requests</title>
+  <title>Pull-request Experiment</title>
   <style>
     html {
       line-height: 1.5;
@@ -150,10 +150,11 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Pull Requests</h1>
+<h1 class="title">Pull-request Experiment</h1>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
+<li><a href="#introduction">Introduction</a></li>
 <li><a href="#bloc">Bloc</a></li>
 <li><a href="#dataframe">DataFrame</a></li>
 <li><a href="#discordst">DiscordSt</a></li>
@@ -169,6 +170,98 @@
 <li><a href="#zinc">Zinc</a></li>
 </ul>
 </nav>
+<h2 id="introduction">Introduction</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td><em>This document is a part of Smallamp evaluations. Please visit <a href="https://github.com/mabdi/SmallAmp-evaluations">our homepage</a> for more information.</em></td>
+</tr>
+</tbody>
+</table>
+<p>In this page we explain the qualitative study. In this experiment, we manually choose an amplified test method for each project and send a Pull-request in Github. In order to attract the interest of developers to review our request, we have selected the test method testing an important class in the project or the test method having the most killed mutants.</p>
+<p>In some cases, we have manually polished the selected test method by choosing a meaningful test name, renaming the variables or removing the superfluous lines. Table below demonstrates the status as well as the address of each pull-request per project.</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 16%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project</strong></th>
+<th><strong>Status</strong></th>
+<th><strong>Pull request url</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Seaside</td>
+<td>Merged</td>
+<td><a href="https://github.com/SeasideSt/Seaside/pull/1215" class="uri">https://github.com/SeasideSt/Seaside/pull/1215</a></td>
+</tr>
+<tr class="even">
+<td>PolyMath</td>
+<td>Merged</td>
+<td><a href="https://github.com/PolyMathOrg/PolyMath/pull/178" class="uri">https://github.com/PolyMathOrg/PolyMath/pull/178</a></td>
+</tr>
+<tr class="odd">
+<td>Pharo-Launcher</td>
+<td>Merged</td>
+<td><a href="https://github.com/pharo-project/pharo-launcher/pull/500" class="uri">https://github.com/pharo-project/pharo-launcher/pull/500</a></td>
+</tr>
+<tr class="even">
+<td>DataFrame</td>
+<td>Merged</td>
+<td><a href="https://github.com/PolyMathOrg/DataFrame/pull/132" class="uri">https://github.com/PolyMathOrg/DataFrame/pull/132</a></td>
+</tr>
+<tr class="odd">
+<td>Bloc</td>
+<td>Merged</td>
+<td><a href="https://github.com/feenkcom/Bloc/pull/7" class="uri">https://github.com/feenkcom/Bloc/pull/7</a></td>
+</tr>
+<tr class="even">
+<td>GraphQL</td>
+<td>Merged</td>
+<td><a href="https://github.com/OBJECTSEMANTICS/GraphQL/pull/12" class="uri">https://github.com/OBJECTSEMANTICS/GraphQL/pull/12</a></td>
+</tr>
+<tr class="odd">
+<td>Zinc</td>
+<td>Merged</td>
+<td><a href="https://github.com/svenvc/zinc/pull/58" class="uri">https://github.com/svenvc/zinc/pull/58</a></td>
+</tr>
+<tr class="even">
+<td>DiscordSt</td>
+<td>Merged</td>
+<td><a href="https://github.com/JurajKubelka/DiscordSt/pull/75" class="uri">https://github.com/JurajKubelka/DiscordSt/pull/75</a></td>
+</tr>
+<tr class="odd">
+<td>MaterialDesignLite</td>
+<td>Merged</td>
+<td><a href="https://github.com/DuneSt/MaterialDesignLite/pull/308" class="uri">https://github.com/DuneSt/MaterialDesignLite/pull/308</a></td>
+</tr>
+<tr class="even">
+<td>Roassal3</td>
+<td>Merged</td>
+<td><a href="https://github.com/ObjectProfile/Roassal3/pull/340" class="uri">https://github.com/ObjectProfile/Roassal3/pull/340</a></td>
+</tr>
+<tr class="odd">
+<td>PetitParser2</td>
+<td>Open</td>
+<td><a href="https://github.com/kursjan/petitparser2/pull/64" class="uri">https://github.com/kursjan/petitparser2/pull/64</a></td>
+</tr>
+<tr class="even">
+<td>OpenPonk</td>
+<td>Open</td>
+<td><a href="https://github.com/OpenPonk/openponk/pull/35" class="uri">https://github.com/OpenPonk/openponk/pull/35</a></td>
+</tr>
+<tr class="odd">
+<td>Telescope</td>
+<td>Open</td>
+<td><a href="https://github.com/TelescopeSt/Telescope/pull/162" class="uri">https://github.com/TelescopeSt/Telescope/pull/162</a></td>
+</tr>
+</tbody>
+</table>
+<p>In the following sections, we describe each pull-request in more details.</p>
 <h2 id="bloc">Bloc</h2>
 <p>We sent a <a href="https://github.com/feenkcom/Bloc/pull/7">pull-request</a> to this project containing the suggestion for adding a new assertion in an existing test method in the test class <code>BlKeyboardProcessorTest</code>. The suggested test method is shown in figure below.</p>
 <figure>

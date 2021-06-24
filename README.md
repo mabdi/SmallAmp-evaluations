@@ -3,7 +3,7 @@ This repository includes the evaluation data for SmallAmp
 
 ## Pull request experiment
 
-For the details of the pull-request study, please visit [This page](https://htmlpreview.github.io/?https://github.com/mabdi/SmallAmp-evaluations/blob/main/pull-requests/pull-requests.html)
+For the details of the pull-request study, please visit [this page](https://htmlpreview.github.io/?https://github.com/mabdi/SmallAmp-evaluations/blob/main/pull-requests/pull-requests.html).
 
 ## How to use
 

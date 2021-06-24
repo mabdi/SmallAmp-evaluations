@@ -1,9 +1,15 @@
 # SmallAmp-evaluations
-This repository includes the evaluation data for SmallAmp
+
+This repository includes the evaluation data for SmallAmp paper titled: "*Small-Amp: Test Amplification in a Dynamically Typed Language*"
+[![DOI:TODO](http://img.shields.io/badge/DOI-TODO-blue.svg)](https://www.doi.org/)
 
 ## Pull request experiment
 
 For the details of the pull-request study, please visit [this page](https://htmlpreview.github.io/?https://github.com/mabdi/SmallAmp-evaluations/blob/main/pull-requests/pull-requests.html).
+
+## Detailed amplification results
+
+The detailed result of our quantitative study, you can visit [here](tables).
 
 ## How to use
 

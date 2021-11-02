@@ -1,3 +1,4 @@
+
 import sys
 import random_select
 import csv
@@ -9,10 +10,7 @@ from collections import Counter
 BASE = '../pharo-projects-files'
 
 
-def main():
-  if len(sys.argv) < 2:
-     sys.exit("I need a file name")
-  file = sys.argv[1]
+def process(file):
   with open(file) as f:
      csv_f = csv.reader(f)
      next(csv_f) # skip the header
@@ -42,6 +40,13 @@ def main():
               exceptions.append(m)
         #print(project,cls,len(jsonObj['amplifiedMethods']), len(focuses), len(exceptions))   
         print(len(focuses) + len(exceptions))
+
+def main():
+  if len(sys.argv) < 2:
+     sys.exit("I need a file name")
+  file = sys.argv[1]
+  process(file)
+
 
 if __name__ == "__main__":
    main()

@@ -1,6 +1,13 @@
 id	test class	otm	tloc	tmut	oms	oam	ams	imp	atm	inck	akm	time
-1	DataFrameJsonWriterTest	4	187	12	50.00	6	66.67	16.67	1	0.33	2	0:00:09
-2	DataFrameCsvReaderTest	4	65	20	85.00	3	85.00	0.00	0	0.00	0	0:00:05
-3	DataFrameJsonReaderTest	9	142	22	72.73	6	90.91	18.18	2	0.25	4	0:07:35
-4	DataFrameTypeDetectorTest	15	56	68	94.12	4	94.12	0.00	0	0.00	0	0:02:07
-5	DataFrameInternalTest	32	299	119	77.31	27	83.19	5.88	4	0.08	7	0:06:00
+1	DataFrameJsonWriterTest2	4	187	12	50.00	6	66.67	16.67	1	0.33	2	0:00:11
+2	DataFrameJsonWriterTest3	4	187	12	50.00	6	66.67	16.67	1	0.33	2	0:00:11
+3	DataFrameJsonWriterTest4	4	187	12	50.00	6	66.67	16.67	1	0.33	2	0:00:11
+4	DataFrameCsvReaderTest2	4	65	20	85.00	3	85.00	0.00	0	0.00	0	0:00:08
+5	DataFrameCsvReaderTest3	4	65	20	85.00	3	85.00	0.00	0	0.00	0	0:00:07
+6	DataFrameCsvReaderTest4	4	65	20	85.00	3	85.00	0.00	0	0.00	0	0:00:07
+7	DataFrameJsonReaderTest2	9	142	22	72.73	6	90.91	18.18	2	0.25	4	0:08:43
+8	DataFrameJsonReaderTest3	9	142	22	72.73	6	90.91	18.18	2	0.25	4	0:08:57
+9	DataFrameJsonReaderTest4	9	142	22	72.73	6	90.91	18.18	2	0.25	4	0:09:11
+10	DataFrameTypeDetectorTest2	15	56	68	94.12	4	94.12	0.00	0	0.00	0	0:02:02
+11	DataFrameTypeDetectorTest3	15	56	68	94.12	4	94.12	0.00	0	0.00	0	0:02:06
+12	DataFrameTypeDetectorTest4	15	56	68	94.12	4	94.12	0.00	0	0.00	0	0:02:06

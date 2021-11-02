@@ -30,7 +30,7 @@ Then unzip zip files and also move the manifest file:
 
 ```shell
 mkdir pharo-projects-files
-tar -xvf projects.tar -C pharo-projects-files
+tar -xvf experiments-20211027/projects.tar -C pharo-projects-files
 cp -r projects/manifest small-amp/runner/projects
 ```
 

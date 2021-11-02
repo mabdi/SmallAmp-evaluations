@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Pull-request Experiment</title>
+  <title>Pull Requests</title>
   <style>
     html {
       line-height: 1.5;
@@ -150,7 +150,7 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Pull-request Experiment</h1>
+<h1 class="title">Pull Requests</h1>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
@@ -164,7 +164,6 @@
 <li><a href="#petitparser2">PetitParser2</a></li>
 <li><a href="#pharo-launcher">Pharo-Launcher</a></li>
 <li><a href="#polymath">PolyMath</a></li>
-<li><a href="#roassal3">Roassal3</a></li>
 <li><a href="#seaside">Seaside</a></li>
 <li><a href="#telescope">Telescope</a></li>
 <li><a href="#zinc">Zinc</a></li>
@@ -240,21 +239,16 @@
 <td><a href="https://github.com/DuneSt/MaterialDesignLite/pull/308" class="uri">https://github.com/DuneSt/MaterialDesignLite/pull/308</a></td>
 </tr>
 <tr class="even">
-<td>Roassal3</td>
-<td>Merged</td>
-<td><a href="https://github.com/ObjectProfile/Roassal3/pull/340" class="uri">https://github.com/ObjectProfile/Roassal3/pull/340</a></td>
-</tr>
-<tr class="odd">
 <td>PetitParser2</td>
 <td>Open</td>
 <td><a href="https://github.com/kursjan/petitparser2/pull/64" class="uri">https://github.com/kursjan/petitparser2/pull/64</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>OpenPonk</td>
 <td>Open</td>
 <td><a href="https://github.com/OpenPonk/openponk/pull/35" class="uri">https://github.com/OpenPonk/openponk/pull/35</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Telescope</td>
 <td>Open</td>
 <td><a href="https://github.com/TelescopeSt/Telescope/pull/162" class="uri">https://github.com/TelescopeSt/Telescope/pull/162</a></td>
@@ -328,13 +322,6 @@
 <p>This test method is testing the call of the method <code>#householder</code> on two different vectors. Before this test, the method <code>#householder</code> was not covered in this test class.</p>
 <p>The <em>method-call-adder</em> input amplifier adds calling to this method in different test methods. We included two of them in a new test method that execute two different branches in the test method (based on the condition <code>x &lt;= 0</code>). The former vector (line 75 in the figure) forces the <code>ifTrue</code> branch and the latter vector (line 80 in the figure) forces <code>ifFalse</code> branch. Note that the comment text (line 75) is added manually to increase the readability of the test.</p>
 <p>The original test method included two assertions to confirm the type of the returned value of the method (<code>self assert: w class equals: Array</code>). The developers asked us to omit these assertion statements, because it was exposing an implementation detail. We changed the pull request accordingly and it was merged immediately.</p>
-<h2 id="roassal3">Roassal3</h2>
-<p>We sent a <a href="https://github.com/ObjectProfile/Roassal3/pull/340">pull-request</a> to this project containing the suggestion for adding a new test method in the test class <code>RSCameraTest</code> called <code>#testZoomToFit</code>. The suggested test method is shown in the figure below.</p>
-<figure>
-<img src="figures/pr-roassal3.png" alt="Suggested test method in the project Roassal3" /><figcaption aria-hidden="true">Suggested test method in the project Roassal3</figcaption>
-</figure>
-<p>This test method is derived from an original test called <code>#testPosition</code>, and covers the method <code>RSCamera&gt;&gt; #zoomToFit</code>, which was not covered by <code>RSCameraTest</code>.</p>
-<p>The pull-request merged with the comment: <em>Thanks! Your test makes sense</em>.</p>
 <h2 id="seaside">Seaside</h2>
 <p>We sent a <a href="https://github.com/SeasideSt/Seaside/pull/1215">pull-request</a> to this project containing the suggestion for adding a set of new lines into an existing test method in the test class <code>WARequestTest</code>. The test method and suggestions are shown in the fegure below.</p>
 <figure>

@@ -31,7 +31,7 @@ def prepare_list(lst, project, type):
                      with open(BASE + '/' + project + '/' + jsonObj['amplifiedClass'] + '.st') as f2:
                         stFile = f2.read()
                      for junk in stFile.split('!'):
-                        if junk.strip().startswith(m.split('#')[1]):
+                        if junk.strip().startswith(m.split('#')[1]) and not junk.strip().startswith(m.split('#')[1] + "_"):
                            onlyAAmpkilled += junk.count('smallAmpCoveres') 
              res.append([project, type] + x[1:] + [ str(onlyAAmpkilled) ])
        return res

@@ -23,11 +23,22 @@ def main():
      csv_f = csv.reader(f)
      next(csv_f) # skip the header
      for row in csv_f:
+#       if row[1].startswith('WebGrammarTest'):
         project = row[12]
         cls = row[1]
-        kills = 0
+        kills = []
+        aamp_kills = []
         with open(BASE + '/' + project + '/' + cls + '.json') as f:
            jsonObj = json.loads(f.read())
+        with open(BASE + '/' + project + '/' + jsonObj['amplifiedClass'] + '.st') as f2:
+           stFile = f2.read()
+        for m in jsonObj['amplifiedMethods']:
+            if m.endswith('_amp'):
+               for junk in stFile.split('!'):
+                 if junk.strip().startswith(m.split('#')[1]) and not junk.strip().startswith(m.split('#')[1] + "_"):
+                    rx_sequence=re.compile(r"\<smallAmpCoveres\: '(.*)'\>",re.MULTILINE)
+                    for match in rx_sequence.finditer(junk):
+                       aamp_kills.append(match)
         for m in jsonObj['amplifiedMethods']:
            thisAmps = analyseMethodName(m)
            #print(thisAmps)
@@ -35,11 +46,16 @@ def main():
               with open(BASE + '/' + project + '/' + jsonObj['amplifiedClass'] + '.st') as f2:
                  stFile = f2.read()
               for junk in stFile.split('!'):
-                 if junk.strip().startswith(m.split('#')[1]):
+                 if junk.strip().startswith(m.split('#')[1]) and not junk.strip().startswith(m.split('#')[1]+ "_"):
                     rx_sequence=re.compile(r"\<smallAmpCoveres\: '(.*)'\>",re.MULTILINE)
                     for match in rx_sequence.finditer(junk):
-                       kills += 1
-        print(kills)
+                       kills.append(match)
+#                       print(match.group(0))
+        kills = {x.group(0) for x in kills}
+        aamp_kills = {x.group(0) for x in aamp_kills}
+ #       print(kills)
+  #      print( aamp_kills)
+        print(len(kills.difference( aamp_kills) ))
 
 if __name__ == "__main__":
    main()
